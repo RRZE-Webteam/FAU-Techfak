@@ -377,7 +377,29 @@
 					background-color: darken($colorLightest, 3%);
 				}
 			}
+			&.techfak a {
+			    background-color: $colorTechFak;
+			    color: #fff;
+			}
+			&.rwfak a {
+			    background-color:  $colorRwFak;
+			    color: #fff;
+			}
+			&.medfak a {
+			    background-color:  $colorMedFak;
+			    color: #fff;
+			}
+			&.natfak a {
+			    background-color:  $colorNatFak;
+			    color: #fff;
+			}
+			&.fau a, &.default a {
+			    background-color:  $colorDefault;
+			    color: #fff;
+			}
+			
 		}
+		
 	}
 }
 
