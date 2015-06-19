@@ -55,7 +55,7 @@
 					padding: 0;
 					font-weight: normal;
 					font-size: 15px;
-					background: transparent url('../img/list-arrow.png') no-repeat left center !important;
+					background: transparent url('../img/list-arrow.png') no-repeat left center;
 					display: block;
 					padding: 7px 20px 7px 20px;
 					color: $colorMainMenu;
@@ -65,7 +65,7 @@
 
 				a:hover, a:focus {
 					text-decoration: none;
-					background-color: lighten($colorHover, 5%) !important;
+					background-color: $colorHover;
 				}
 			}
 		}
@@ -176,7 +176,7 @@
 .no-js #nav li.has-sub:hover a, 
 .no-js #nav li.has-sub:focus a, 
 #nav li.has-sub.focus a {
-	background-position: right -28px;
+	// background-position: right -28px;
 	color: $colorMainMenu;
 }
 
