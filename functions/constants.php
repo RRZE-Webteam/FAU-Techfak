@@ -169,6 +169,7 @@ $defaultoptions = array(
     'advanced_topevent'			=> true,
     'advanced_activateads'		=> true,
     'galery_link_original'		=> true,
+    'advanced_page_start_herojumplink'	=> false,
 
     'advanced_post_active_subtitle'	=> true,
 
@@ -876,7 +877,14 @@ $setoptions = array(
                   'type'    => 'section',
                   'title'   => __( 'Design', 'fau' ),                      
               ),
-	       
+     	         'advanced_page_start_herojumplink' => array(
+                  'type'    => 'bool',
+                  'title'   => __( 'Sprunglink unter der Bühne', 'fau' ),
+                  'label'   => __( 'Aktiviert die Schaltung eines Sprunglinks unterhalb der Bühne der Startseite, wenn das Browserfenster eine Größe zwischen 700px und 900px Höhe hat.', 'fau' ),                
+                  'default' => $defaultoptions['advanced_page_start_herojumplink'],
+		  'parent'  => 'design'
+		),  
+ 
 	      'galery_link_original'	  => array(
                   'type'    => 'bool',
                   'title'   => __( 'Verlinke Galerybilder', 'fau' ),
