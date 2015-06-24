@@ -144,8 +144,8 @@ global $options;
 					<?php
 					
 						$number = 0;
-						$max = $options['start_max_newspertag'] || 3;
-						$maxall = $options['start_max_newscontent'] || 5;
+						$max = $options['start_max_newspertag'];
+						$maxall = $options['start_max_newscontent'];
 						
 						for($j = 1; $j <= 3; $j++) {
 							$i = 0;
