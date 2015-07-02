@@ -517,7 +517,10 @@ function fau_post_gallery($output, $attr) {
         'exclude' => '',
 	'type' => NULL,
 	'lightbox' => FALSE,
-	'captions' => 1
+	'captions' => 1,
+	'columns'   => 6,
+	'link'	=> 'file'
+
     ), $attr));
 
     $id = intval($id);
@@ -540,8 +543,14 @@ function fau_post_gallery($output, $attr) {
     if (!isset($attr['captions'])) {
 	$attr['captions'] =1;
     }
+     if (!isset($attr['columns'])) {
+	$attr['columns'] = 7;
+    }
     if (!isset($attr['type'])) {
 	$attr['type'] = 'default';
+    }
+    if (!isset($attr['link'])) {
+	$attr['link'] = 'file';
     }
     switch($attr['type'])  {
 	    case "grid":
@@ -672,7 +681,7 @@ function fau_post_gallery($output, $attr) {
 					$lightboxattr = ' title="'.$lightboxtitle.'"';
 				    }
 				}
-				if ($options['galery_link_original']) {
+				if (($options['galery_link_original']) && ($attr['link'] != 'none')) {
 				    if($meta->post_excerpt != '') { $output .= '<br>'; }
 				    $output .= '<span class="linkorigin">(<a href="'.fau_esc_url($img_full[0]).'" '.$lightboxattr.' class="lightbox" rel="lightbox-'.$rand.'">'.__('Vergrößern','fau').'</a>)</span>';
 				}
@@ -697,15 +706,12 @@ function fau_post_gallery($output, $attr) {
 			$output .= "	</ul>";
 			$output .= "</div>";				
 			$output .= "<script type=\"text/javascript\"> jQuery(document).ready(function($) {";			
-			$output .= "$('#carousel-$rand').flexslider({selector: 'ul > li',animation: 'slide',keyboard:true,multipleKeyboard:true,directionNav:true,controlNav: true,pausePlay: false,slideshow: false,asNavFor: '#slider-$rand',itemWidth: 125,itemMargin: 5});";
+			$output .= "$('#carousel-$rand').flexslider({maxItems: ".$attr['columns'].",selector: 'ul > li',animation: 'slide',keyboard:true,multipleKeyboard:true,directionNav:true,controlNav: true,pausePlay: false,slideshow: false,asNavFor: '#slider-$rand',itemWidth: 125,itemMargin: 5});";
 			$output .= "$('#slider-$rand').flexslider({selector: 'ul > li',animation: 'slide',keyboard:true,multipleKeyboard:true,directionNav: false,controlNav: false,pausePlay: false,slideshow: false,sync: '#carousel-$rand'});";
 			$output .= "});</script>";
 
 		    }
     }
-
-    
-
     return $output;
 }
 
