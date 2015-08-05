@@ -798,7 +798,7 @@ body.admin-bar.nav-fixed {
 
 /* Social */
 #social {
-	background: $colorLightest;
+	background: $colorSocialBackground;
 	padding: 20px 0;
 	margin-bottom: -30px;
 	margin-top: 30px;
@@ -809,7 +809,13 @@ body.admin-bar.nav-fixed {
 		color: $colorSocial;
 		padding-top: 0;
 	}
-	
+	a {
+	    color: $colorSocial;	    
+	    &:hover, &:focus {
+		    text-decoration: underline;
+		    color: $colorPrimary;
+	    }
+	}
 	ul.social {
 		@include no-list;
 		margin: 0 0 10px 0;
@@ -840,7 +846,7 @@ body.admin-bar.nav-fixed {
 			//	@extend .fa;
 			//	@extend .fa-lg;
 				background: $colorSocial;
-				color: $colorLightest;
+				color: $colorSocialBackground;
 				height: 21px;
 				width: 24px;
 				padding-top: 3px;

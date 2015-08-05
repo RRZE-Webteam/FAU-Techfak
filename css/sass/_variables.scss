@@ -86,7 +86,8 @@ $colorMetaLightest:		desaturate(lighten($colorDefault, 73%), 75%);
 $colorPasspartoutBackground:	$colorStandardHellgrau;
 
 // Social Bar Startseite
-$colorSocial: $colorButton; // #a1aab1
+$colorSocial:			$colorDefault;
+$colorSocialBackground:		$colorMetaBackground;
 
 // Define Siegel
 $siegelurl: '../img/siegel-techfak.png';
