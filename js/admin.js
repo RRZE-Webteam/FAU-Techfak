@@ -39,7 +39,9 @@ jQuery(document).ready(function($){
     });
 
    
+    
     if (($('#page_template').val() == 'page-templates/page-start.php')
+     || ($('#page_template').val() == 'page-templates/page-portalindex.php')
      || ($('#page_template').val() == 'page-templates/page-portal.php')) {
 	// show the meta box
 	$('#fau_metabox_page_imagelinks').show();
@@ -47,7 +49,8 @@ jQuery(document).ready(function($){
 	$('#fau_metabox_page_subnavmenu').hide();
 	
 
-	if (($('#page_template').val() == 'page-templates/page-portal.php')) {
+	if (($('#page_template').val() == 'page-templates/page-portal.php')
+  	 || ($('#page_template').val() == 'page-templates/page-portalindex.php')) {
 	    $('#portalseitenquote').show();
 	    $('#fau_metabox_page_untertitel').show();
 	} else {
@@ -75,14 +78,17 @@ jQuery(document).ready(function($){
 
 
     $('#page_template').live('change', function(){
-	if (($(this).val() == 'page-templates/page-start.php') || ($(this).val() == 'page-templates/page-portal.php')) {
+	if (($(this).val() == 'page-templates/page-start.php') 
+		|| ($(this).val() == 'page-templates/page-portal.php')
+		|| ($(this).val() == 'page-templates/page-portalindex.php')) {
 	    // show the meta box
 	    $('#fau_metabox_page_imagelinks').show();
 	    $('#fau_metabox_page_subnavmenu').hide();
    
 	    $('#fau_metabox_page_portalmenu').show();
 
-	    if (($(this).val() == 'page-templates/page-portal.php')) {
+	    if (($(this).val() == 'page-templates/page-portal.php')
+	      || ($(this).val() == 'page-templates/page-portalindex.php')) {
 		$('#portalseitenquote').show();
 		$('#fau_metabox_page_untertitel').show();
 	    } else {
