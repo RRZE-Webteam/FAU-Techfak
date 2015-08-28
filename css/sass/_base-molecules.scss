@@ -1314,6 +1314,7 @@ ul.tagcloud {
 		
 		.accordion-body {
 			display: none;
+			overflow: hidden;
 			
 			.accordion-inner {
 				@extend .clearfix;
