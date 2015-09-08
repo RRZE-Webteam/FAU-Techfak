@@ -106,8 +106,12 @@ global $options;
 	
 		<div class="container">
 			<div class="row">
-				<div class="span6">
+				<div role="presentation" class="span6">				    
 				    <h1><?php echo get_bloginfo( 'title' ) ?></h1>
+				    <?php if (null !== get_bloginfo( 'description' )) {
+					 echo '<p class="description">'.get_bloginfo( 'description' )."</p>";
+				    }
+				    ?>
 				</div>
 				<div class="span3">
 					<?php if(has_nav_menu('quicklinks-3')) { ?>
@@ -132,7 +136,7 @@ global $options;
 		</div>
 	</section> <!-- /hero -->
 
-	<section id="content">
+	<div id="content">
 		<div class="container">
 			<?php 
 			    echo fau_get_ad('werbebanner_seitlich',false);
@@ -140,6 +144,7 @@ global $options;
 			
 			<div class="row">
 				<div class="span8">
+				    <main>
 					
 					<?php
 					
@@ -196,12 +201,13 @@ global $options;
 
 					$category = get_the_category_by_ID($options['start_link_news_cat']);
 					if (($category) && ($options['start_link_news_show']==1)) { ?>
+					
 					<div class="news-more-links">
 						<a class="news-more" href="<?php echo get_category_link($options['start_link_news_cat']); ?>"><?php echo $options['start_link_news_linktitle']; ?></a>
 						<a class="news-rss" href="<?php echo get_category_feed_link($options['start_link_news_cat']); ?>">RSS</a>
 					</div>
 					<?php } ?>			    
-					
+				    </main>	
 				</div>
 				<div class="span4">
 					
@@ -292,9 +298,8 @@ global $options;
 		</div> <!-- /container -->
 		<?php get_template_part('footer', 'social'); ?>	
 		
-	</section> <!-- /content -->
+	</div> <!-- /content -->
 
 <?php 
 get_footer(); 
-
 

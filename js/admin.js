@@ -39,7 +39,6 @@ jQuery(document).ready(function($){
     });
 
    
-    
     if (($('#page_template').val() == 'page-templates/page-start.php')
      || ($('#page_template').val() == 'page-templates/page-portalindex.php')
      || ($('#page_template').val() == 'page-templates/page-portal.php')) {
