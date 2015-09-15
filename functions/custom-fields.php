@@ -1246,11 +1246,32 @@ function fau_save_metabox_page_sidebar( $post_id, $post ) {
 		    update_post_meta( $post_id, $name, $newid );			    
 		 
 	    }
-	
 
-	
-	
-	
-	
 }
+
+/*
+ *  Ersetzt das wpLink-Skript durch ein benutzerdefiniertes Skript.
+ */
+add_action('admin_enqueue_scripts', function () {
+    $suffix = defined('WP_DEBUG') && WP_DEBUG ? '' : '.min';
+
+    // Erst deaktivieren wir das Standard-Wordpress-Skript
+    wp_deregister_script('wplink');
+
+    // Dann ersetzen wir es durch unser benutzerdefiniertes wpLink-Skript
+    wp_enqueue_script('rrze-wplink', get_template_directory_uri() . "/js/rrze-wplink$suffix.js", array('jquery'), FALSE, TRUE);
+
+    // Lokalisierung des Skripts
+    $localized = array(
+            'title' => __('Link einfügen/ändern', 'fau'),
+            'update' => __('Aktualisieren', 'fau'),
+            'save' => __('Link hinzufügen', 'fau'),
+            'noTitle' => __('(kein Titel)', 'fau'),
+            'noMatchesFound' => __('Keine Ergebnisse gefunden.', 'fau')
+    );
+
+    wp_localize_script('rrze-wplink', 'wpLinkL10n', $localized);
+    
+}, 999);
+
 
