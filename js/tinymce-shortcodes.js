@@ -25,9 +25,10 @@
 				editor.insertContent('[collapsibles]<br>[collapse title="Name" color=""]<br>Hier der Text<br>[/collapse]<br>[collapse title="Name" color=""]<br>Hier der Text<br>[/collapse]<br>[/collapsibles]');
 			}
 		});
+                
+                
                
-               
-		/*
+	/*	
 		editor.addMenuItem('shortcode_person', {
 			text: 'Person einfügen',
 			context: 'tools',
