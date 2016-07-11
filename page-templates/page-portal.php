@@ -33,7 +33,7 @@ get_header(); ?>
 			}
 			the_content(); 
 			?>
-		    </main>	 
+		    </main> 
 		</div>
 		<div class="span4 sidebar-outline">
 		    <?php get_template_part('sidebar'); ?>
@@ -58,7 +58,7 @@ get_header(); ?>
 		
 		fau_get_contentmenu($menuslug,$displaysub,0,0,$nothumbnails,$nofallbackthumbs);
 	      }
-	      
+
 		$logoliste = get_post_meta( $post->ID, 'fauval_imagelink_catid', true );			
 		if ($logoliste) { 
 		    $logos = fau_get_imagelinks($logoliste, false);
@@ -69,7 +69,7 @@ get_header(); ?>
 		}
 	      
 	    ?>
-	  
+	    
 	    <?php echo fau_get_ad('werbebanner_unten',false); ?>
 	</div>
 	
