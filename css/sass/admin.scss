@@ -1,11 +1,12 @@
-/* 
- *  Backend CSS
- */
+/*-----------------------------------------------------------------------------------*/
+/* Backend CSS
+/*-----------------------------------------------------------------------------------*/
 
 // jQuery UI fuer das Backend
-@import "includes/jquery-ui";
 
- 
+@import "frameworks/jquery-ui";
+
+
 
  #headimg {
             width: 350px;
