@@ -1,5 +1,5 @@
 FAU-Einrichtungen
-Wordpress-Theme für zentrale Einrichtungen der 
+Wordpress-Theme für die Technische Fakultät der 
 Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)
 ====================================================
  
@@ -8,7 +8,7 @@ Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)
 DOWNLOADS
 
     GITHub-Repo:
-        https://github.com/RRZE-Webteam/FAU-Einrichtungen
+        https://github.com/RRZE-Webteam/FAU-Techfak
     
     
 
