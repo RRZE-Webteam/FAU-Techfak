@@ -319,7 +319,7 @@ class Walker_Content_Menu extends Walker_Nav_Menu {
 
 			if($this->level == 1) $atts['class'] = 'subpage-item';
 			
-
+		
 			$atts = apply_filters( 'nav_menu_link_attributes', $atts, $item, $args );
 
 			$attributes = '';
