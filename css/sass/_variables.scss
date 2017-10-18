@@ -5,12 +5,11 @@
  $farbfamilie: 'tf';
     // med, phil, nat, rw, tf, zuv 
 
- // DEBUGMODE 
+ // DEBUGMODE
  // (Sets border around container and main regions)
-    
 $debugmode: 'false';
 
- 
+
 // Define fonts
 $fontStack: 'roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
 $fontStackSerifs: Georgia, serif;
@@ -91,7 +90,7 @@ $colorPrintMainLinks:	    $colorText;
     $colorPrimary: $colorTechFak;    
     $PalettonHellste:	#ebecee; // #bfc2c5;
     $PalettonHeller:	#d2d5d7; // #8e949a;
-    $PalettonDunkler:	#53606b; 
+    $PalettonDunkler:	#53606b;
     $PalettonDunkelste:	#3b4956;
     $siegelurl: '../img/siegel-techfak-schnitt.png';   
  } @else if $farbfamilie == 'zuv' {
@@ -160,7 +159,7 @@ $font-size-base:		15;
 $font-size-meta:		13;
 $font-size-sidebar:		13;
 
-
+$font-size-footer:		13;
 $font-size-breadcrumb:		13;
 $font-size-herosearch:		16;
 $font-size-header-branding:	19;
@@ -189,10 +188,12 @@ $font-size-nav-blockquote:	16;
 $font-size-nav-blockquote-cite:	14;
 $font-size-nav-introtext:	15;
 $font-size-nav-flyout-items:	15;
-
+$font-size-nav-mainlinks:	17;
 
 $font-size-h1:			32;
 $font-size-h1-mobilebranding:	24;
+$font-size-h1-desktopbranding:	20;
+$font-size-h1-desktopbranding-longtitle:    17;
 $font-size-h1-banner:		28;
 
 $font-size-h2:			24;
