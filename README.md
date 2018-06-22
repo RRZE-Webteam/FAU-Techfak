@@ -1,4 +1,4 @@
-# FAU-Einrichtungen
+# FAU-Techfak
 
 Wordpress-Theme für die technische Fakultät der Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)
 
