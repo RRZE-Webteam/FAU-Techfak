@@ -1,6 +1,6 @@
 # FAU-Techfak
 
-Wordpress-Theme für die technische Fakultät der Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)
+Wordpress-Theme für die Technische Fakultät der Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)
 
 Eine Dokumentation kann unter https://wordpress.rrze.fau.de  gefunden werden.
 
