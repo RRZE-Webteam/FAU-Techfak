@@ -36,6 +36,20 @@
 
     @media (min-width: $screen-md) {
         // 992 - 
+	
+	display: inline-block;
+       
+            .sidebar-inline {
+                display: inline-block;
+                float: right;
+                width: 220px;
+                flex: none; 
+            }
+            .content-inline  {
+                width: 100%;
+                display: block;
+            }
+	/*
         display: flex;   
         flex-wrap: nowrap;
         flex-direction: row;
@@ -58,6 +72,7 @@
             margin-right: 0px; 
             margin-left: 15px;
         }
+	*/
 
     }
     
