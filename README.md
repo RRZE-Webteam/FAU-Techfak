@@ -1,12 +1,16 @@
 # FAU-Techfak
 
+[![Release Version](https://img.shields.io/github/v/release/rrze-webteam/FAU-Techfak?label=Release+Version)](https://github.com/rrze-webteam/fau-Techfak/releases/) [![GitHub License](https://img.shields.io/github/license/rrze-webteam/fau-Techfak?label=Lizenz)](https://github.com/RRZE-Webteam/FAU-Techfak/blob/master/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/rrze-webteam/fau-einrichtungen)](https://github.com/RRZE-Webteam/FAU-Einrichtungen/issues)
+
 Wordpress-Theme für die Technische Fakultät der Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)
 
+## Screenshot
+
+![Beispiel Theme Screenshot](screenshot.png)
 
 ## Download 
 
-GITHub-Repo: https://github.com/RRZE-Webteam/FAU-Techfak
-
+GitHub-Repo: https://github.com/RRZE-Webteam/FAU-Techfak
 
 ## Autor 
 RRZE-Webteam , http://www.rrze.fau.de
