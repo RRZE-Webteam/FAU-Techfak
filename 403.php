@@ -1,16 +1,15 @@
 <?php
 /**
- * The template for displaying 404 pages (Zugriff nicht erlaubt).
+ * The template for displaying 403 pages (Zugriff nicht erlaubt).
  *
  * @package WordPress
  * @subpackage FAU
  * @since FAU 1.0
  */
 
+get_header();
 $error_hidedefaultnotice = get_theme_mod('advanced_error_sidebar_hidedefaultnotice');
 
-?>
-get_header();
 ?>
  <div id="content">
     <div class="content-container">	   
